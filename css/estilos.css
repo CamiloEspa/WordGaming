@@ -1,0 +1,26 @@
+
+.alinearTexto {
+    text-align: center;
+    color:darkslateblue;
+}
+.tituloLogo{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.titulosNav {
+    text-decoration: none;
+}
+
+.logoTamanio img{
+
+    height: 5rem;
+}
+
+.alinearHeader{
+
+    display: flex;
+    align-items: center;
+}

@@ -1,6 +1,6 @@
-
+/* 
 let nombreUsuario = (prompt("Ingrese su nombre su usuario"))
-console.log ("Bienvenido a WordGaming, "+nombreUsuario ) 
+console.log ("Bienvenido a WordGaming, "+nombreUsuario )  */
 
 
 /* function Consola (fabricante, nombre, anio, edicion, color, capacidad, memoria){
@@ -23,19 +23,21 @@ const PlayStation5= new Consola ("Sony", "Play Station 5", "2020", "Standart", "
 //Array Consolas
 
 /* {
-    fabricante: "Nintendo",
-    nombre: "Nintendo Switch",
-    anio: "2021",
-    edicion: "Standart",
-    color: "Negro",
-    capacidad: "64 Gb",
-    memoria: "4Gb",
-    precio: "1800000 COP",
+    id:"",
+    fabricante: "",
+    nombre: "",
+    anio: "",
+    edicion: "",
+    color: "",
+    capacidad: "",
+    memoria: "",
+    precio: "",
 }, */
 
 const Consolas = [
+     //Consolas de Microsoft
     {
-        id:"1",
+    id:"1",
     fabricante: "Microsoft",
     nombre: "xBox One",
     anio: "2021",
@@ -56,6 +58,7 @@ const Consolas = [
     memoria: "512 Mb RAM",
     precio: "1100000",
 },
+//Consola de Sony
 {   
     id:"3",
     fabricante: "Sony",
@@ -126,3 +129,39 @@ console.log (consolasRecientes)
 
 const listaConsolas = Consolas.map(consola => consola.nombre)
 console.log("Estas son nuestras consolas: "+listaConsolas);
+
+
+
+//DOM
+//Tabla
+
+let  tabla=document.createElement ("table");
+tabla.className="table table-dark table-striped";
+let tablaCuerpo=document.createElement ("tbody")
+
+for ( const productosConsolas of Consolas){
+    let fila=document.createElement ("tr");
+    fila.innerHTML= `
+                    <td>${Consolas.id}</td>
+                    <td>${Consolas.fabricante}</td>
+                    <td>${Consolas.nombre}</td>
+                    <td>${Consolas.precio}</td>`;
+    tablaCuerpo.append(fila);
+}
+
+tabla.append(tablaCuerpo)
+let contenedorTabla=document.getElementById("tablaProductos")
+
+
+
+//Eventos
+
+const form= document.querySelector("#formulario");
+
+const enviarFormulario = (event) => {
+    event.preventDefault();
+    console.log (event);
+}
+
+form.addEventListener("submit", enviarFormulario);
+

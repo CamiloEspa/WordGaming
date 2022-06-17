@@ -21,10 +21,12 @@ body a{
 .header-left{
 	float:left;
 	width: 59%;
+	display: flex;
+	align-items: center;
 }
 .logo{
 	float:left;
-	margin-right: 2%;
+	margin-right: 8%;
 }
 .menu{
 	 float:left;
@@ -53,7 +55,8 @@ body a{
 	 color:#000;
  } 
  #nav .current a {
-	 color:red;
+	 color:black;
+	 background: #FFF;
 }
 .toggleMenu {
     display:  none;
@@ -641,7 +644,7 @@ i.close1{
    -moz-box-shadow: 0 0 1px #000;
    box-shadow: 0 0 1px #000;
 }
-.view a.info: hover {
+.view a.info: hover { 
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
