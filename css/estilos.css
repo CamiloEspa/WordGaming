@@ -24,3 +24,9 @@
     display: flex;
     align-items: center;
 }
+
+.flexCards{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}

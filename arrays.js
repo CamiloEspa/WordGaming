@@ -37,7 +37,7 @@ const PlayStation5= new Consola ("Sony", "Play Station 5", "2020", "Standart", "
 const Consolas = [
      //Consolas de Microsoft
     {
-    id:"1",
+    id:"",
     fabricante: "Microsoft",
     nombre: "xBox One",
     anio: "2021",
@@ -48,7 +48,7 @@ const Consolas = [
     precio: "1800000 COP",
 },
 { 
-    id:"2",
+    id:"",
     fabricante: "Microsoft",
     nombre: "xBox 360",
     anio: "2005",
@@ -58,9 +58,20 @@ const Consolas = [
     memoria: "512 Mb RAM",
     precio: "1100000",
 },
+{
+    id:"",
+    fabricante: "Microsoft",
+    nombre: "Xbox",
+    anio: "2001",
+    edicion: "Standart",
+    color: "Negro",
+    capacidad: "10 Gb",
+    memoria: "64 Mb RAM",
+    precio: "",
+},
 //Consola de Sony
 {   
-    id:"3",
+    id:"",
     fabricante: "Sony",
     nombre: "Play Station 4",
     anio: "2016",
@@ -71,7 +82,7 @@ const Consolas = [
     precio: "2300000",
 },
 {   
-    id:"4",
+    id:"",
     fabricante: "Sony",
     nombre: "Play Station 5",
     anio: "2020",
@@ -82,7 +93,7 @@ const Consolas = [
     precio: "3200000 COP",
 },
 {   
-    id:"5",
+    id:"",
     fabricante: "Nintendo",
     nombre: "Nintendo Switch",
     anio: "2021",
@@ -93,7 +104,7 @@ const Consolas = [
     precio: "1800000 COP",
 },
 {   
-    id:"6",
+    id:"",
     fabricante: "Nintendo",
     nombre: "Nintendo Wii",
     anio: "2006",
@@ -105,10 +116,10 @@ const Consolas = [
 }
 ]
 
-for (const Consola of Consolas){
+/* for (const Consola of Consolas){
     console.log ("Consola " +Consola.nombre +" Año "+ Consola.anio);
 
-}
+} */
 
 //Find
 let encontrar=Consolas.find ((Consola)=>Consola.nombre==="xBox One")
@@ -119,11 +130,11 @@ if (encontrar == undefined){
 
 // Filtro precios
 
-const consolasEconomicas = Consolas.filter((consola)=> consola.precio <=1500000)
+/* const consolasEconomicas = Consolas.filter((consola)=> consola.precio <=1500000)
 console.log (consolasEconomicas)
 
 const consolasRecientes = Consolas.filter ((consolas)=>consolas.anio >=2020)
-console.log (consolasRecientes)
+console.log (consolasRecientes) */
 
 // Map
 
@@ -151,7 +162,7 @@ for ( const productosConsolas of Consolas){
 
 tabla.append(tablaCuerpo)
 let contenedorTabla=document.getElementById("tablaProductos")
-
+contenedorTabla.append(tabla);
 
 
 //Eventos
