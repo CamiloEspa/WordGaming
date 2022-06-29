@@ -28,6 +28,12 @@ function renderizarProductos() {
     Consolas.forEach(consola=>{
         document.getElementById(`btn${consola.id}`).addEventListener('click',function(){
             agregarAlCarrito(consola);
+            Toastify({
+                text:"Ha agregado un" +consola.nombre,
+                duration:3000,
+                gravity:"top",
+                position:"right"
+            }).showToast();
         });
     });
 }
@@ -35,7 +41,6 @@ function renderizarProductos() {
 function agregarAlCarrito(productoNuevo){
     carrito.push(productoNuevo);
     console.log(carrito);
-    alert("Consola: "+productoNuevo.nombre+" agregado al carro!!!");
     document.getElementById("tablabody").innerHTML+=`
         <tr>
             <td>${productoNuevo.id}</td>
