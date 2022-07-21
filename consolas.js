@@ -9,7 +9,7 @@ const Consolas = [
         color: "Negro",
         capacidad: "1 Tb (1000 Gb)",
         memoria: "16 Gb",
-        precio: "",
+        precio: "3150000 COP",
         foto:"https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc3/Xbox_Series_X.png",
     },
     {
@@ -33,7 +33,7 @@ const Consolas = [
     color: "Negro",
     capacidad: "1000 Gb (1 TB)",
     memoria: "512 Mb RAM",
-    precio: "1100000",
+    precio: "1100000 COP",
     foto:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Xbox_360_S.png/1024px-Xbox_360_S.png",
 },
 {
@@ -45,7 +45,7 @@ const Consolas = [
     color: "Negro",
     capacidad: "10 Gb",
     memoria: "64 Mb RAM",
-    precio: "",
+    precio: "350000 COP",
     foto:"https://i0.wp.com/teknoscene.com/wp-content/uploads/2021/09/Xbox.png?fit=1800%2C1700&ssl=1",
 },
 //Consola de Sony
@@ -70,7 +70,7 @@ const Consolas = [
     color: "Negro",
     capacidad: "1000 GB (1 TB)",
     memoria: "8 Gb RAM",
-    precio: "2300000",
+    precio: "2300000 COP",
     foto:"https://upload.wikimedia.org/wikipedia/commons/3/33/PlayStation_Four.png",
 },
 {   
@@ -82,7 +82,7 @@ const Consolas = [
     color: "Negro",
     capacidad: "80 Gb",
     memoria: "256 Mb RAM",
-    precio: "",
+    precio: "880000 COP",
     foto:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Playstation3vector.svg/800px-Playstation3vector.svg.png",
 },
 {   
@@ -94,7 +94,7 @@ const Consolas = [
     color: "Negro",
     capacidad: "250 Gb",
     memoria: "32 Mb",
-    precio: "",
+    precio: "380000 COP",
     foto:"https://m.media-amazon.com/images/I/51-toNb6MzL._SL1200_.jpg",
 },
 {   

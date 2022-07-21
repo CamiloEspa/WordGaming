@@ -20,7 +20,7 @@ function renderizarProductos() {
         <p> Edicion: ${consola.edicion} </p>
         <p> Memoria: ${consola.memoria} </p>
         <p><strong> $ ${consola.precio} </strong></p>
-        
+        <hr>
         <button class='btn btn-danger'id='btn${consola.id}'>Comprar</button>
         </li>`;
     }
@@ -32,7 +32,10 @@ function renderizarProductos() {
                 text:"Ha agregado un" +consola.nombre,
                 duration:3000,
                 gravity:"top",
-                position:"right"
+                position:"right",
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                }
             }).showToast();
         });
     });
